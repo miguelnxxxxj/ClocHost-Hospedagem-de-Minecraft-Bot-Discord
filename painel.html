@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel do Cliente - Clochost</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/painel.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <h2>🌑 Clochost</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">Início</a></li>
+          <li><a href="/painel.html">Meus Servidores</a></li>
+          <li><a href="#" id="logout-btn">Sair</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+
+    <main class="dashboard">
+      <div class="container">
+        <div class="dashboard-header">
+          <div>
+            <h1>Bem-vindo, <span id="user-name">Cliente</span>! 👋</h1>
+            <p class="subtitle">Gerencie seus servidores Minecraft e Bots</p>
+          </div>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <div class="stat-icon">🖥️</div>
+            <div class="stat-info">
+              <h3>Servidores Ativos</h3>
+              <p class="stat-value" id="active-servers">0</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💰</div>
+            <div class="stat-info">
+              <h3>Plano Atual</h3>
+              <p class="stat-value">Free</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📊</div>
+            <div class="stat-info">
+              <h3>Status</h3>
+              <p class="stat-value status-online">Online</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="servers-section">
+          <div class="section-header">
+            <h2>Meus Servidores</h2>
+            <a href="/" class="btn btn-primary">➕ Criar Novo Servidor</a>
+          </div>
+
+          <div id="servers-list" class="servers-grid">
+            <div class="empty-state">
+              <div class="empty-icon">📦</div>
+              <h3>Nenhum servidor ainda</h3>
+              <p>Clique em "Criar Novo Servidor" para começar!</p>
+              <a href="/" class="btn btn-primary">Criar Primeiro Servidor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2025 Clochost — Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/painel.js"></script>
+  </body>
+</html>

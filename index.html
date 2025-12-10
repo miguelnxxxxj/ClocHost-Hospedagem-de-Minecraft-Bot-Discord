@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clochost - Hospedagem de Minecraft e Bots</title>
+    <meta name="description" content="Hospedagem profissional de servidores Minecraft e Bots com proteção Anti-DDoS e suporte 24/7">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <h2>🌑 Clochost</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#minecraft">Planos Minecraft</a></li>
+          <li><a href="#bot">Planos Bot</a></li>
+          <li><a href="/auth.html">Área do Cliente</a></li>
+          <li><a href="https://discord.gg/clochost" target="_blank" class="discord-link">Suporte / Discord</a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container">
+          <h1>Melhor escolha de hospedagem com a melhor performance</h1>
+          <p class="hero-subtitle">Servidores otimizados para máxima performance, com proteção DDoS e suporte 24/7. Tudo isso com o melhor custo-benefício do mercado.</p>
+          <div class="hero-buttons">
+            <a href="#minecraft" class="btn btn-primary">Criar Servidor Agora</a>
+            <a href="https://discord.gg/clochost" target="_blank" class="btn btn-secondary">Fale Conosco</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">99.9%</div>
+              <div class="stat-label">Uptime garantido</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">19ms</div>
+              <div class="stat-label">Ping médio</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">Suporte técnico</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <h2 class="section-title">Gerencie seus serviços com facilidade</h2>
+          <p class="section-subtitle">Nosso painel de controle intuitivo permite que você gerencie todos os seus serviços em um só lugar, com facilidade e eficiência.</p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">⚙️</div>
+              <h3>Gerenciamento simplificado</h3>
+              <p>Interface amigável que facilita o gerenciamento de todos os seus serviços.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Monitoramento em tempo real</h3>
+              <p>Acompanhe o desempenho dos seus serviços com métricas atualizadas em tempo real.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📱</div>
+              <h3>Acesso via dispositivos móveis</h3>
+              <p>Gerencie seus serviços de qualquer lugar através do nosso painel responsivo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="minecraft" class="plans-section">
+        <div class="container">
+          <h2 class="section-title">💻 Planos Minecraft</h2>
+          <div class="plans-grid" id="minecraft-plans"></div>
+        </div>
+      </section>
+
+      <section id="bot" class="plans-section">
+        <div class="container">
+          <h2 class="section-title">🤖 Planos Bot</h2>
+          <div class="plans-grid" id="bot-plans"></div>
+        </div>
+      </section>
+
+      <section id="cliente" class="client-area">
+        <div class="container">
+          <h2 class="section-title">Área do Cliente</h2>
+          <p class="text-center">Faça login para acessar seu painel e gerenciar seus servidores</p>
+          <a href="/auth.html" class="btn btn-primary">Fazer Login</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🌑 Clochost</h3>
+            <p>Hospedagem profissional de servidores Minecraft e Bots</p>
+          </div>
+          <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="https://discord.gg/clochost" target="_blank">Discord</a></li>
+              <li><a href="#termos">Termos de Uso</a></li>
+              <li><a href="#privacidade">Política de Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="https://discord.gg/clochost" target="_blank">Discord</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#docs">Documentação</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Clochost — Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="purchase-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Finalizar Compra</h2>
+        <div id="plan-details"></div>
+        <p class="modal-text">Entre em contato via Discord para finalizar sua compra!</p>
+        <a href="https://discord.gg/clochost" target="_blank" class="btn btn-discord">Comprar via Discord</a>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
